@@ -1,6 +1,8 @@
+@mixin height{height: 100%;}
 body{
-    background-color: red;
-    // header{nav{background-image: url(../image/white.jpg);}}
+    // background-color: red;
+    @include height;
+    // header{nav{background-image: url(../image/white.jpg);}}  !!! background nav !!!
 }
 #first{
     display: flex;
@@ -18,13 +20,17 @@ body{
     img{width: 50%;}
 }
 #second{
-    background-image: url(../image/black.jpg);
+    background-image: url(../image/white.jpg);
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
-    height: 50vh;
+    // height: 50vh;
     flex: 0 1 60vw;
+    align-self: flex-end;
+    .carousel-item{ height:100vh;
+        width: auto;}
 }
+
 /* Screen Size 500px and Up */
 @media(min-width:500px){
     #home_page{

@@ -1,5 +1,5 @@
 body {
-  background-color: red;
+  height: 100%;
 }
 
 #first {
@@ -30,14 +30,20 @@ body {
 }
 
 #second {
-  background-image: url(../image/black.jpg);
+  background-image: url(../image/white.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vh;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 60vw;
           flex: 0 1 60vw;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#second .carousel-item {
+  height: 100vh;
+  width: auto;
 }
 
 /* Screen Size 500px and Up */
