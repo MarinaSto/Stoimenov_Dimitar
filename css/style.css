@@ -2,6 +2,23 @@ body {
   height: 100%;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 #first {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,35 +47,76 @@ body {
 }
 
 #second {
+  height: 50vh;
   background-image: url(../image/white.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 60vw;
-          flex: 0 1 60vw;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-#second .carousel-item {
-  height: 100vh;
-  width: auto;
+#about_page {
+  width: 100vw;
+}
+
+#about_page .immage img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #232323;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  margin: 10px 0 10px 0;
+}
+
+footer ul a {
+  color: inherit;
+  margin: 10px;
+}
+
+footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+footer .info span {
+  font-size: 0.85rem;
+  font-style: italic;
 }
 
 /* Screen Size 500px and Up */
-@media (min-width: 500px) {
-  #home_page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-  }
-  #home_page #first {
-    height: 100vh;
-  }
-  #home_page #second {
-    height: 100vh;
-  }
-}
 /*# sourceMappingURL=style.css.map */
