@@ -5,10 +5,10 @@ body {
   overflow: hidden;
 }
 
-body nav {
+body .nav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -250px;
   background: #262626;
   width: 250px;
   height: 100%;
@@ -17,16 +17,16 @@ body nav {
   z-index: 9;
 }
 
-body nav ul {
+body .nav ul {
   margin: 0;
   padding: 20px 0;
 }
 
-body nav ul li {
+body .nav ul li {
   list-style: none;
 }
 
-body nav ul li a {
+body .nav ul li a {
   padding: 10px 20px;
   color: #fff;
   display: block;
@@ -34,7 +34,7 @@ body nav ul li a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-body nav .navBtn {
+body .nav .navBtn {
   position: absolute;
   top: 0;
   right: -50px;
@@ -48,18 +48,18 @@ body nav .navBtn {
   outline: none;
 }
 
-body nav .navBtn span {
+body .nav .navBtn span {
   display: block;
   width: 35px;
   height: 3px;
   background: #262626;
   position: absolute;
   top: 24px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-body nav .navBtn span:before {
+body .nav .navBtn span:before {
   content: "";
   position: absolute;
   top: -10px;
@@ -67,11 +67,11 @@ body nav .navBtn span:before {
   width: 100%;
   height: 3px;
   background: #262626;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
-body nav .navBtn span:after {
+body .nav .navBtn span:after {
   content: "";
   position: absolute;
   top: 10px;
@@ -79,8 +79,28 @@ body nav .navBtn span:after {
   width: 100%;
   height: 3px;
   background: #262626;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+body .nav .navBtn.toggle span {
+  background: transparent;
+}
+
+body .nav .navBtn.toggle span:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body .nav .navBtn.toggle span:after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body .active {
+  left: 0;
 }
 
 .wrapper {
