@@ -1,0 +1,35 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#gallery {
+  padding: 50px 5px 0 5px;
+}
+
+#gallery h3 {
+  margin: 20px 0;
+}
+
+#gallery .column {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  max-width: 100%;
+}
+
+#gallery img {
+  width: 100%;
+  padding: 5px 0;
+}
+
+@media (min-width: 500px) {
+  #gallery {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #gallery img {
+    width: 32%;
+  }
+}
+/*# sourceMappingURL=style-gallery.css.map */

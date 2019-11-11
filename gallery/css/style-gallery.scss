@@ -1,0 +1,28 @@
+*{box-sizing: border-box;}
+#gallery{
+    padding: 50px 5px 0 5px;
+    
+    h3{margin: 20px 0;}
+    .column {
+
+        flex: 100%;
+        max-width: 100%;
+      }
+    img{
+        width: 100%;
+        padding: 5px 0 ;
+    }
+
+}
+
+@media(min-width:500px){
+    #gallery{
+    width: 100%;
+    margin: 0 auto;
+        
+        img{
+            width: 32%;
+            // margin: 1%;
+        }
+    }
+}
