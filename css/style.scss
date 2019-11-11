@@ -48,7 +48,7 @@ body{
                 background: #262626;
                 position: absolute;
                 top:24px;
-                transition:.5s;
+                transition:.8s;
                 &:before{
                     content: "";
                     position: absolute;
@@ -75,11 +75,14 @@ body{
                 background: transparent;
                 &:before{
                     top: 0;
-                    transform: rotate(45deg);
+                    transform: rotate(1125deg);
+                    background: rgb(42, 99, 16);
                 }
                 &:after{
                     top: 0;
-                    transform: rotate(-45deg);}
+                    transform: rotate(-1125deg);
+                    background: rgb(42, 99, 16);
+                }
             }
         }
          
@@ -201,6 +204,7 @@ footer{
         }
         #second{
             height: 100vh;
+            width: 60%;
         }
     }
 }

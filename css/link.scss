@@ -1,0 +1,46 @@
+body{
+    background: white;
+}
+.title{
+    margin: 50px 20px 0 20px;
+    h1{
+        text-transform: uppercase;
+    }
+}
+.description{
+    margin: 20px 20px 0 20px;
+    p{
+        font-size: 1.25rem;
+    }
+}
+
+.image{
+    img{
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+}
+.skills{
+    display: flex;
+    padding: 40px 0;
+    background: #e7e7e7;
+    img{
+        width: 100%; 
+        margin: 30px 0;
+    }
+}
+.skills2{
+    display: flex;
+    background: #e7e7e7;
+    padding: 40px 0;
+    width: 100%;
+    justify-content: center;
+    a{
+        display: flex;
+        justify-content: center;
+        img{
+          width: 50%;
+        }
+    }
+  
+}
