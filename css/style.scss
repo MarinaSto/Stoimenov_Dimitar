@@ -4,7 +4,7 @@ body{
     @include height;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    // overflow: hidden;
     // header{nav{background-image: url(../image/white.jpg);}}  !!! background nav !!!
     .nav{
         position: fixed;
@@ -84,7 +84,7 @@ body{
         }
          
     }
-    .active{
+    .nav-active{
         left: 0;
     }
 }
