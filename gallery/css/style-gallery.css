@@ -3,33 +3,44 @@
           box-sizing: border-box;
 }
 
+body {
+  background: repeating-linear-gradient(135deg, rgba(86, 86, 86, 0.02) 0px, rgba(86, 86, 86, 0.02) 22px, rgba(202, 202, 202, 0.02) 22px, rgba(202, 202, 202, 0.02) 67px, rgba(247, 247, 247, 0.02) 67px, rgba(247, 247, 247, 0.02) 113px, rgba(135, 135, 135, 0.02) 113px, rgba(135, 135, 135, 0.02) 132px, rgba(157, 157, 157, 0.02) 132px, rgba(157, 157, 157, 0.02) 153px, rgba(53, 53, 53, 0.02) 153px, rgba(53, 53, 53, 0.02) 171px, rgba(17, 17, 17, 0.02) 171px, rgba(17, 17, 17, 0.02) 181px, rgba(179, 179, 179, 0.02) 181px, rgba(179, 179, 179, 0.02) 220px), repeating-linear-gradient(135deg, rgba(58, 58, 58, 0.02) 0px, rgba(58, 58, 58, 0.02) 41px, rgba(198, 198, 198, 0.02) 41px, rgba(198, 198, 198, 0.02) 60px, rgba(176, 176, 176, 0.02) 60px, rgba(176, 176, 176, 0.02) 99px, rgba(173, 173, 173, 0.02) 99px, rgba(173, 173, 173, 0.02) 146px, rgba(164, 164, 164, 0.02) 146px, rgba(164, 164, 164, 0.02) 167px, rgba(179, 179, 179, 0.02) 167px, rgba(179, 179, 179, 0.02) 205px, rgba(228, 228, 228, 0.02) 205px, rgba(228, 228, 228, 0.02) 230px, rgba(23, 23, 23, 0.02) 230px, rgba(23, 23, 23, 0.02) 241px), repeating-linear-gradient(135deg, rgba(190, 190, 190, 0.02) 0px, rgba(190, 190, 190, 0.02) 15px, rgba(74, 74, 74, 0.02) 15px, rgba(74, 74, 74, 0.02) 45px, rgba(98, 98, 98, 0.02) 45px, rgba(98, 98, 98, 0.02) 71px, rgba(43, 43, 43, 0.02) 71px, rgba(43, 43, 43, 0.02) 95px, rgba(131, 131, 131, 0.02) 95px, rgba(131, 131, 131, 0.02) 118px, rgba(21, 21, 21, 0.02) 118px, rgba(21, 21, 21, 0.02) 130px, rgba(77, 77, 77, 0.02) 130px, rgba(77, 77, 77, 0.02) 167px, rgba(231, 231, 231, 0.02) 167px, rgba(231, 231, 231, 0.02) 189px), -webkit-gradient(linear, left top, right top, from(#fbfbfb), to(#fafafa));
+  background: repeating-linear-gradient(135deg, rgba(86, 86, 86, 0.02) 0px, rgba(86, 86, 86, 0.02) 22px, rgba(202, 202, 202, 0.02) 22px, rgba(202, 202, 202, 0.02) 67px, rgba(247, 247, 247, 0.02) 67px, rgba(247, 247, 247, 0.02) 113px, rgba(135, 135, 135, 0.02) 113px, rgba(135, 135, 135, 0.02) 132px, rgba(157, 157, 157, 0.02) 132px, rgba(157, 157, 157, 0.02) 153px, rgba(53, 53, 53, 0.02) 153px, rgba(53, 53, 53, 0.02) 171px, rgba(17, 17, 17, 0.02) 171px, rgba(17, 17, 17, 0.02) 181px, rgba(179, 179, 179, 0.02) 181px, rgba(179, 179, 179, 0.02) 220px), repeating-linear-gradient(135deg, rgba(58, 58, 58, 0.02) 0px, rgba(58, 58, 58, 0.02) 41px, rgba(198, 198, 198, 0.02) 41px, rgba(198, 198, 198, 0.02) 60px, rgba(176, 176, 176, 0.02) 60px, rgba(176, 176, 176, 0.02) 99px, rgba(173, 173, 173, 0.02) 99px, rgba(173, 173, 173, 0.02) 146px, rgba(164, 164, 164, 0.02) 146px, rgba(164, 164, 164, 0.02) 167px, rgba(179, 179, 179, 0.02) 167px, rgba(179, 179, 179, 0.02) 205px, rgba(228, 228, 228, 0.02) 205px, rgba(228, 228, 228, 0.02) 230px, rgba(23, 23, 23, 0.02) 230px, rgba(23, 23, 23, 0.02) 241px), repeating-linear-gradient(135deg, rgba(190, 190, 190, 0.02) 0px, rgba(190, 190, 190, 0.02) 15px, rgba(74, 74, 74, 0.02) 15px, rgba(74, 74, 74, 0.02) 45px, rgba(98, 98, 98, 0.02) 45px, rgba(98, 98, 98, 0.02) 71px, rgba(43, 43, 43, 0.02) 71px, rgba(43, 43, 43, 0.02) 95px, rgba(131, 131, 131, 0.02) 95px, rgba(131, 131, 131, 0.02) 118px, rgba(21, 21, 21, 0.02) 118px, rgba(21, 21, 21, 0.02) 130px, rgba(77, 77, 77, 0.02) 130px, rgba(77, 77, 77, 0.02) 167px, rgba(231, 231, 231, 0.02) 167px, rgba(231, 231, 231, 0.02) 189px), linear-gradient(90deg, #fbfbfb, #fafafa);
+}
+
+h3 {
+  margin: 10px 0 40px 60px;
+}
+
 #gallery {
-  padding: 50px 5px 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#gallery h3 {
-  margin: 20px 0;
+#gallery a {
+  padding: 10px;
 }
 
-#gallery .column {
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
-  max-width: 100%;
-}
-
-#gallery img {
+#gallery a img {
   width: 100%;
-  padding: 5px 0;
 }
 
-@media (min-width: 500px) {
-  #gallery {
-    width: 100%;
-    margin: 0 auto;
-  }
-  #gallery img {
-    width: 32%;
-  }
+#gallery a img:hover {
+  opacity: 0.5;
+  -webkit-transition: .9s;
+  transition: .9s;
 }
 /*# sourceMappingURL=style-gallery.css.map */
