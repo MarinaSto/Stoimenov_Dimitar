@@ -10,6 +10,12 @@ body {
 
 h3 {
   margin: 10px 0 40px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #gallery {
