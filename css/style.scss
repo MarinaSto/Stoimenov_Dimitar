@@ -76,12 +76,12 @@ body{
                 background: transparent;
                 &:before{
                     top: 0;
-                    transform: rotate(1125deg);
+                    transform: rotate(405deg);
                     background: rgb(42, 99, 16);
                 }
                 &:after{
                     top: 0;
-                    transform: rotate(-1125deg);
+                    transform: rotate(-405deg);
                     background: rgb(42, 99, 16);
                 }
             }
@@ -105,37 +105,37 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-#first{
-    display: flex;
-    flex: 0 1 60%;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-right:1rem;
-    padding-left:1rem;
+    height: 100vh;
     background-image: url(../image/white.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    img{width: 70%;}
+        background-position: center;
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+    #first{
+        display: flex;
+        flex: 0 1 50%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right:1rem;
+        padding-left:1rem;
+        
+        img{
+            width: 70%;
+                    }
+    }
+    #second{
+        display: flex;
+        flex: 0 1 50%;
+        height: 50%;
+       
+        align-items: center;
+        justify-content: center;
+        
+    }
 }
-#second{
-    display: flex;
-    flex: 0 1 50%;
-    height: 50vh;
-    background-image: url(../image/whitee.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    display: flex;
-    align-items: flex-end;;
-    // flex: 0 1 60vw;
-    
-    
-}
+
 #about_page{
     width: 100vw;
     display: flex;
@@ -192,6 +192,8 @@ footer{
             color: inherit;
             margin: 10px;
             // margin: 0 1rem;
+            &:hover{color:#648D51}
+
         }
     }
    
@@ -238,6 +240,21 @@ footer{
         }
         .about-info{
             width: 50vw;
+            a{
+                
+                padding:0.5rem 5rem;
+                border: 1px #ccc solid;
+                display: inline-block;
+                margin: 2rem auto;
+                border-radius: 50px;
+                text-decoration: none;
+                color: #333;
+                transition: background 500ms ease;
+                .btn{margin: 0;}
+                &:hover{background: #f4f4f4;}
+                
+            }
+    
         }
         img{
             width: 50%;
@@ -245,4 +262,6 @@ footer{
         
         }
     }
+
+    
 }
